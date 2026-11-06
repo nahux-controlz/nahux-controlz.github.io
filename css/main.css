@@ -284,3 +284,112 @@ html:not(.js) .main-nav { display: block; position: static; order: 3; width: 100
   .main-nav__link[aria-current] { border-radius: 0; box-shadow: inset 0 -2px 0 var(--color-secondary); }
   .main-nav__actions { flex-wrap: nowrap; gap: var(--sp-2); }
 }
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--sp-12) var(--sp-16);
+}
+.river {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.river__line {
+  fill: none;
+  stroke: var(--color-river-line);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: fluir 1.6s var(--ease) both;
+}
+.river__line--accent { stroke: var(--color-river-accent); stroke-width: 2; }
+@keyframes fluir {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+
+.hero__grid {
+  position: relative;
+  display: grid;
+  gap: var(--sp-10);
+}
+.hero__copy { display: grid; justify-items: start; gap: var(--sp-6); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-1) var(--sp-3);
+  border: 1px solid var(--color-success);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-success);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  line-height: 1.5;
+}
+.badge__dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentcolor;
+  animation: latido 2.4s ease-in-out infinite;
+}
+@keyframes latido {
+  50% { box-shadow: 0 0 0 5px color-mix(in srgb, currentcolor 22%, transparent); }
+}
+
+.hero__title {
+  font-size: var(--fs-hero);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+.hero__role {
+  display: block;
+  margin-top: var(--sp-3);
+  color: var(--color-primary);
+  font-size: clamp(1.5rem, 1.1rem + 1.9vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.hero__lead { max-width: 36rem; font-size: var(--fs-md); line-height: 1.5; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: var(--sp-3); }
+.hero__place {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--color-ink-soft);
+  font-size: var(--fs-sm);
+}
+.hero__place svg { flex: none; width: 18px; height: 18px; }
+
+/* Ficha: responde lo que el reclutador busca primero */
+.ficha {
+  align-self: end;
+  padding: var(--sp-6);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+.ficha__title { margin-bottom: var(--sp-4); font-size: var(--fs-lg); letter-spacing: -0.015em; }
+.ficha__list { display: grid; gap: var(--sp-4); }
+.ficha__list > div { display: grid; gap: 2px; padding-top: var(--sp-3); border-top: 1px solid var(--color-line); }
+.ficha__list dt { color: var(--color-secondary); font-size: var(--fs-sm); font-weight: 700; }
+
+@media (min-width: 768px) {
+  .hero { padding-block: var(--sp-16) var(--sp-24); }
+}
+@media (min-width: 1024px) {
+  .hero__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: var(--sp-12); }
+}
