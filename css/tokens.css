@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Design tokens — concepto "Cauce"
+   Mismos nombres y valores que las variables del archivo de Figma.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("../assets/fonts/bricolage-grotesque-latin-wght-normal.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../assets/fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+
+  /* Color · marca */
+  --color-primary: #0e5a5c;         /* río */
+  --color-primary-hover: #0a4648;
+  --color-primary-active: #073436;
+  --color-on-primary: #fffdf8;
+  --color-secondary: #a83f18;       /* arcilla */
+  --color-secondary-hover: #8c3311;
+  --color-on-secondary: #fffdf8;
+
+  /* Color · neutros */
+  --color-bg: #f7f2e8;              /* arena */
+  --color-surface: #fffdf8;         /* papel */
+  --color-surface-2: #efe8d9;
+  --color-ink: #12302f;             /* tinta */
+  --color-ink-soft: #435553;
+  --color-line: #d3cab6;
+  --color-line-strong: #7f7b6b;     /* bordes con 3:1 para controles */
+
+  /* Color · estados */
+  --color-success: #23653a;
+  --color-warning: #805300;
+  --color-error: #ad2519;
+  --color-info: #0d5a8c;
+
+  /* Color · ilustración (contacto y líneas) */
+  --color-contact-bg: #0e5a5c;
+  --color-contact-ink: #fffdf8;
+  --color-contact-soft: #d9ece8;
+  --color-river-line: #bfd3cb;
+  --color-river-accent: #a83f18;
+
+  /* Tipografía */
+  --font-display: "Bricolage Grotesque", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+
+  --fs-sm: 0.875rem;      /* 14 */
+  --fs-base: 1.0625rem;   /* 17 */
+  --fs-md: 1.25rem;       /* 20 */
+  --fs-lg: 1.5rem;        /* 24 */
+  --fs-xl: clamp(1.75rem, 1.5rem + 1.1vw, 2.25rem);   /* 28–36 */
+  --fs-2xl: clamp(2.25rem, 1.8rem + 2vw, 3.25rem);    /* 36–52 */
+  --fs-hero: clamp(3.25rem, 2rem + 6vw, 6.5rem);      /* 52–104 */
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-body: 1.6;
+
+  /* Espaciado (múltiplos de 4) */
+  --sp-1: 0.25rem;  /* 4 */
+  --sp-2: 0.5rem;   /* 8 */
+  --sp-3: 0.75rem;  /* 12 */
+  --sp-4: 1rem;     /* 16 */
+  --sp-5: 1.25rem;  /* 20 */
+  --sp-6: 1.5rem;   /* 24 */
+  --sp-8: 2rem;     /* 32 */
+  --sp-10: 2.5rem;  /* 40 */
+  --sp-12: 3rem;    /* 48 */
+  --sp-16: 4rem;    /* 64 */
+  --sp-24: 6rem;    /* 96 */
+
+  /* Grilla */
+  --container: 75rem;   /* 1200 */
+  --gutter: var(--sp-4);
+  --header-h: 4.25rem;  /* 68 */
+
+  /* Forma y elevación */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 999px;
+  --shadow-card: 0 1px 0 rgb(18 48 47 / 6%), 0 12px 28px -18px rgb(18 48 47 / 35%);
+  --shadow-lift: 0 2px 0 rgb(18 48 47 / 6%), 0 24px 40px -22px rgb(18 48 47 / 50%);
+
+  /* Movimiento */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 140ms;
+  --dur: 260ms;
+}
+
+/* Modo oscuro: "río de noche". Se aplica por preferencia del sistema o por el toggle. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-primary: #7fd6cd;
+  --color-primary-hover: #a0e4dd;
+  --color-primary-active: #c0efe9;
+  --color-on-primary: #0b1f1f;
+  --color-secondary: #f4a27c;
+  --color-secondary-hover: #f8bb9d;
+  --color-on-secondary: #0b1f1f;
+
+  --color-bg: #0f1d1d;
+  --color-surface: #162827;
+  --color-surface-2: #1f3533;
+  --color-ink: #f1ecdf;
+  --color-ink-soft: #bdc8c1;
+  --color-line: #33504c;
+  --color-line-strong: #7f9a94;
+
+  --color-success: #84d6a0;
+  --color-warning: #ecc26c;
+  --color-error: #ff9c91;
+  --color-info: #8cc8f0;
+
+  --color-contact-bg: #1a3a39;
+  --color-contact-ink: #f1ecdf;
+  --color-contact-soft: #c9dcd7;
+  --color-river-line: #2c4a47;
+  --color-river-accent: #f4a27c;
+
+  --shadow-card: 0 1px 0 rgb(0 0 0 / 30%), 0 12px 28px -18px rgb(0 0 0 / 70%);
+  --shadow-lift: 0 2px 0 rgb(0 0 0 / 30%), 0 24px 40px -22px rgb(0 0 0 / 85%);
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: var(--sp-8); }
+}
+@media (min-width: 1280px) {
+  :root { --gutter: var(--sp-10); }
+}
