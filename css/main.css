@@ -426,3 +426,72 @@ html:not(.js) .main-nav { display: block; position: static; order: 3; width: 100
 @media (min-width: 1024px) {
   .metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--sp-6); }
 }
+
+/* ==========================================================================
+   Proyectos: toda la tarjeta es clickeable con un único enlace en el título
+   ========================================================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.projects { display: grid; gap: var(--sp-6); }
+
+.project {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.project__media { overflow: hidden; background: var(--color-surface-2); }
+.project__media img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 480ms var(--ease);
+}
+.project__body { display: flex; flex-direction: column; gap: var(--sp-3); padding: var(--sp-6); }
+.project__meta { color: var(--color-ink-soft); font-size: var(--fs-sm); }
+.project__title { font-size: var(--fs-xl); line-height: 1.15; letter-spacing: -0.025em; }
+.project__link { color: var(--color-ink); text-decoration: none; }
+.project__link::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius-lg); }
+.project__link:hover { color: var(--color-ink); }
+.project__link:active { color: var(--color-primary); }
+.project__link:focus-visible { outline: none; }
+.project__link:focus-visible::after { outline: 3px solid var(--color-secondary); outline-offset: -3px; }
+.project__result { padding-left: var(--sp-3); border-left: 3px solid var(--color-secondary); }
+.project__result code { font-family: inherit; font-weight: 700; }
+.project .tags { margin-top: var(--sp-1); }
+.project__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-top: auto;
+  padding-top: var(--sp-3);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.project__cta svg { width: 20px; height: 20px; transition: transform var(--dur) var(--ease); }
+
+.project:hover { transform: translateY(-4px); border-color: var(--color-line-strong); box-shadow: var(--shadow-lift); }
+.project:hover .project__media img { transform: scale(1.03); }
+.project:hover .project__cta svg { transform: translateX(4px); }
+.project:active { transform: translateY(-1px); }
+
+@media (min-width: 768px) {
+  .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project--featured { grid-column: 1 / -1; grid-template-rows: none; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+  .project--featured .project__media img { height: 100%; }
+}
+@media (min-width: 1280px) {
+  .project--featured .project__body { padding: var(--sp-10); }
+}
