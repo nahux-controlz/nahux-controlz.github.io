@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Proceso UX/UI · Portfolio de Nahuel Posse</title>
+<link rel="stylesheet" href="../../css/tokens.css">
+<link rel="stylesheet" href="proceso.css">
+</head>
+<body>
+
+<section class="slide slide--cover">
+  <img class="cover__river" src="img/river.svg" alt="">
+  <div class="cover__text">
+    <p class="kicker">Diseño UX-UI 2026 · Trabajo final</p>
+    <h1>Cauce: el portfolio de Nahuel Posse</h1>
+    <p class="lead">Del usuario al sitio publicado. Licenciatura en Sistemas de Información, FCyT UADER.</p>
+    <dl class="cover__links">
+      <div><dt>Sitio</dt><dd>nahux-controlz.github.io</dd></div>
+      <div><dt>Repositorio</dt><dd>github.com/nahux-controlz/nahux-controlz.github.io</dd></div>
+      <div><dt>Figma</dt><dd>figma.com/design/YqBoTCbp9uNfBJ8tmT5pbe</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="kicker">1 · Usuario</p>
+  <h2>Laura tiene 30 segundos entre dos reuniones</h2>
+  <div class="cols cols--3">
+    <div class="box"><h3>Proto-persona</h3><p>Laura, 34 años, líder de diseño en una software factory de la región. Evalúa perfiles junior desde el celular. Es una hipótesis, no surge de entrevistas.</p></div>
+    <div class="box"><h3>Escenario</h3><p>Recibe el link de un candidato y lo abre en el celular. Si en medio minuto entiende quién es y ve algo que le interesa, guarda el contacto y más tarde lee un caso completo.</p></div>
+    <div class="box box--tint"><h3>Qué necesita → cómo se resuelve</h3>
+      <ul><li>¿Qué hace? → Nombre y rol en el hero</li><li>¿Está disponible? → Badge</li><li>¿Qué busca? → Ficha “En 30 segundos”</li><li>¿Hizo algo real? → Métricas y último caso</li><li>¿Cómo lo contacto? → CTA fijo en el header</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="kicker">2 · Benchmark</p>
+  <h2>Tres portfolios: qué funciona y qué me llevo</h2>
+  <div class="cols cols--3">
+    <div class="bench"><img src="img/bench-brittany.jpg" alt=""><h3>brittanychiang.com</h3><p><b>Funciona:</b> experiencia por período, con tags.</p><p><b>No funciona:</b> proyectos sin problema ni proceso.</p><p class="take">Me llevo: timeline y sección actual marcada.</p></div>
+    <div class="bench"><img src="img/bench-adham.jpg" alt=""><h3>adhamdannaway.com</h3><p><b>Funciona:</b> doble perfil claro en un segundo.</p><p><b>No funciona:</b> texto secundario chico y de bajo contraste.</p><p class="take">Me llevo: decir el doble perfil, con texto legible.</p></div>
+    <div class="bench"><img src="img/bench-rauno.jpg" alt=""><h3>rauno.me</h3><p><b>Funciona:</b> síntesis extrema y copiar el email.</p><p><b>No funciona:</b> cuesta encontrar experiencia y CTA.</p><p class="take">Me llevo: el botón para copiar el email.</p></div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="kicker">3 · Concepto</p>
+  <h2>Cauce: ordenar el recorrido sin frenarlo</h2>
+  <div class="cols cols--3">
+    <div class="box"><h3 class="word">Claro</h3><p><b>Color:</b> arena de fondo y tinta con más de 10:1.</p><p><b>Tipografía:</b> Atkinson Hyperlegible.</p><p><b>Imágenes:</b> capturas reales, sin decoración.</p></div>
+    <div class="box"><h3 class="word">Metódico</h3><p><b>Color:</b> pocos colores, por rol.</p><p><b>Tipografía:</b> escala definida y espacios múltiplos de 4.</p><p><b>Imágenes:</b> líneas paralelas, como un plano.</p></div>
+    <div class="box"><h3 class="word">Cercano</h3><p><b>Color:</b> río, arena y barranca del Litoral.</p><p><b>Tipografía:</b> Bricolage Grotesque en títulos.</p><p><b>Imágenes:</b> retrato ilustrado con líneas de nivel.</p></div>
+  </div>
+  <div class="palette">
+    <span class="c1">Río #0E5A5C</span><span class="c2">Arcilla #A83F18</span><span class="c3">Barranca #EFE8D9</span><span class="c4">Arena #F7F2E8</span><span class="c5">Tinta #12302F</span>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="kicker">4 · Arquitectura</p>
+  <h2>Proyectos antes que Skills: la evidencia primero</h2>
+  <div class="cols cols--2">
+    <div class="box"><h3>Orden de la página</h3>
+      <ol class="flow"><li>Header</li><li>Hero + ficha</li><li>Logros</li><li><b>Proyectos</b> → 2 casos internos</li><li><b>Skills</b></li><li>Experiencia</li><li>Sobre mí</li><li>Contacto</li><li>Footer · 404 aparte</li></ol>
+    </div>
+    <div class="box"><h3>Card sorting del contenido propio</h3>
+      <p>25 tarjetas agrupadas por el autor en 5 preguntas: quién es, qué hizo, qué sabe usar, de dónde viene y cómo contactarlo.</p>
+      <p><b>Decisión:</b> se invierte el orden de la referencia. Laura busca pruebas de trabajo antes que una lista de herramientas.</p>
+      <p class="note">Es una hipótesis que el test con personas tiene que confirmar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="kicker">5 · Wireframes</p>
+  <h2>Mobile y desktop, de la página completa</h2>
+  <div class="cols cols--wire">
+    <img class="frame frame--top" src="img/wireframes.png" alt="">
+    <div class="box"><h3>Qué se definió acá</h3>
+      <ul><li>La ficha pasa debajo del texto en mobile y a la derecha en desktop.</li><li>El proyecto destacado ocupa todo el ancho desde 768 px.</li><li>El menú se colapsa en hamburguesa por debajo de 1024 px.</li><li>La línea de tiempo lleva el período a la izquierda solo en desktop.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="kicker">6 · Design system</p>
+  <h2>Los mismos tokens en Figma y en el código</h2>
+  <div class="cols cols--wire">
+    <img class="frame frame--top" src="img/ds.png" alt="">
+    <div class="box"><h3>Qué incluye</h3>
+      <ul><li>Paleta con primario, secundario, neutros y estados, en claro y oscuro.</li><li>Escala tipográfica con 2 familias.</li><li>Espaciado múltiplo de 4 y grilla de 4, 8 y 12 columnas.</li><li>Botón en 4 estados, tag, métrica, tarjeta de proyecto e item de timeline.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="kicker">7 · Figma vs. sitio</p>
+  <h2>Fidelidad de implementación</h2>
+  <div class="cols cols--2 compare">
+    <figure><img src="img/compare-figma.png" alt=""><figcaption>Figma · Desktop 1280 · Hero</figcaption></figure>
+    <figure><img src="img/compare-sitio.png" alt=""><figcaption>Sitio publicado · 1280 px · Hero</figcaption></figure>
+  </div>
+  <p class="note">El prototipo de alta fidelidad se generó a partir de la maqueta y usa las variables y estilos del design system.</p>
+</section>
+
+<section class="slide">
+  <p class="kicker">8 · Implementación</p>
+  <h2>Medido, no supuesto</h2>
+  <div class="cols cols--stats">
+    <div class="stat"><b>100</b><span>Performance</span></div>
+    <div class="stat"><b>100</b><span>Accessibility</span></div>
+    <div class="stat"><b>100</b><span>Best Practices</span></div>
+    <div class="stat"><b>100</b><span>SEO</span></div>
+  </div>
+  <div class="cols cols--2">
+    <div class="box"><h3>Accesibilidad verificada</h3><ul><li>axe sin violaciones en 4 páginas, 3 anchos y 2 temas.</li><li>Recorrido completo con teclado y foco visible.</li><li>Sin scroll horizontal en 375, 768 y 1280 px.</li></ul></div>
+    <div class="box"><h3>Decisiones técnicas</h3><ul><li>HTML, CSS y JavaScript vanilla, sin frameworks.</li><li>Fuentes autoalojadas e imágenes WebP con lazy loading.</li><li>Deploy con GitHub Actions en cada push a main.</li></ul></div>
+  </div>
+  <p class="note">Lighthouse mobile sobre la URL pública. Captura en docs/lighthouse-mobile.png.</p>
+</section>
+
+<section class="slide">
+  <p class="kicker">9 · Validación</p>
+  <h2>Test de usabilidad con 3 personas</h2>
+  <div class="pending"><b>Pendiente de realizar.</b> Esta diapositiva se completa con los resultados reales de docs/test-usabilidad.md.</div>
+  <table>
+    <thead><tr><th>Tarea</th><th>P1</th><th>P2</th><th>P3</th></tr></thead>
+    <tbody>
+      <tr><td>Decir qué hace y qué busca, tras 30 segundos</td><td></td><td></td><td></td></tr>
+      <tr><td>Encontrar el email</td><td></td><td></td><td></td></tr>
+      <tr><td>Abrir el proyecto más reciente</td><td></td><td></td><td></td></tr>
+      <tr><td>Decir con qué herramientas diseña</td><td></td><td></td><td></td></tr>
+      <tr><td>Abrir el menú mobile e ir a Experiencia</td><td></td><td></td><td></td></tr>
+      <tr><td>Decir dónde estudia y en qué año va</td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="box box--tint findings"><h3>Hallazgos y cambios aplicados</h3><p>A completar después de las sesiones.</p></div>
+</section>
+
+</body>
+</html>
