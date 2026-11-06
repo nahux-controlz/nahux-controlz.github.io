@@ -563,3 +563,31 @@ html:not(.js) .timeline__item::before { background: var(--color-secondary); }
   .timeline__period { grid-row: 1 / span 3; padding-top: 3px; font-size: var(--fs-base); text-align: right; }
   .timeline__item > :not(.timeline__period) { grid-column: 2; }
 }
+
+/* ==========================================================================
+   Sobre mí
+   ========================================================================== */
+.about { display: grid; gap: var(--sp-10); }
+.about__head { margin-bottom: var(--sp-6); }
+.about__intro { max-width: 44rem; font-size: var(--fs-md); line-height: 1.5; }
+.principles { display: grid; gap: var(--sp-4); margin-top: var(--sp-8); }
+.principle {
+  display: grid;
+  gap: var(--sp-2);
+  padding: var(--sp-5);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+.principle h3 { font-size: var(--fs-md); }
+.principle p { color: var(--color-ink-soft); }
+.about__portrait { max-width: 22rem; margin: 0; }
+.about__portrait img { width: 100%; border-radius: var(--radius-lg); }
+
+@media (min-width: 768px) {
+  .principles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+  .about { grid-template-columns: minmax(0, 8fr) minmax(0, 3fr); align-items: start; gap: var(--sp-12); }
+  .about__portrait { position: sticky; top: calc(var(--header-h) + var(--sp-6)); }
+}
