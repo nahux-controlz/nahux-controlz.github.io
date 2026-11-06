@@ -591,3 +591,85 @@ html:not(.js) .timeline__item::before { background: var(--color-secondary); }
   .about { grid-template-columns: minmax(0, 8fr) minmax(0, 3fr); align-items: start; gap: var(--sp-12); }
   .about__portrait { position: sticky; top: calc(var(--header-h) + var(--sp-6)); }
 }
+
+/* ==========================================================================
+   Contacto
+   ========================================================================== */
+.contact {
+  padding-block: var(--sp-16);
+  background: var(--color-contact-bg);
+  color: var(--color-contact-ink);
+}
+.contact__grid { display: grid; gap: var(--sp-8); }
+.contact__copy { display: grid; gap: var(--sp-4); }
+.contact__lead { max-width: 36rem; color: var(--color-contact-soft); font-size: var(--fs-md); line-height: 1.5; }
+.eyebrow--light { color: var(--color-contact-soft); }
+
+.contact a { color: var(--color-contact-ink); }
+.contact a:hover { color: var(--color-contact-ink); text-decoration-thickness: 2px; }
+.contact a:active { color: var(--color-contact-soft); }
+.contact :focus-visible { outline-color: var(--color-contact-ink); }
+
+.contact__actions { display: grid; justify-items: start; align-content: start; gap: var(--sp-5); }
+.contact .btn--light { background: var(--color-contact-ink); color: var(--color-contact-bg); text-decoration: none; }
+.contact .btn--light:hover { background: var(--color-contact-soft); color: var(--color-contact-bg); }
+.contact .btn--light:active { background: var(--color-surface-2); color: var(--color-contact-bg); }
+:root[data-theme="dark"] .contact .btn--light:active { color: var(--color-ink); }
+
+.contact__email { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2) var(--sp-3); font-size: var(--fs-md); }
+.contact__copy-btn {
+  min-height: 44px;
+  padding: var(--sp-1) var(--sp-4);
+  border: 1px solid var(--color-contact-soft);
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-contact-ink);
+  font: inherit;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.contact__copy-btn:hover { background: var(--color-contact-ink); color: var(--color-contact-bg); }
+.contact__copy-btn:active { background: var(--color-contact-soft); color: var(--color-contact-bg); }
+.contact__status { font-size: var(--fs-sm); font-weight: 700; }
+.contact__status:empty { display: none; }
+
+.contact__social { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-6); }
+.contact__social a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
+
+@media (min-width: 768px) {
+  .contact { padding-block: var(--sp-24); }
+}
+@media (min-width: 1024px) {
+  .contact__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--sp-12); align-items: end; }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer { padding-block: var(--sp-10); border-top: 1px solid var(--color-line); color: var(--color-ink-soft); font-size: var(--fs-sm); }
+.site-footer__grid { display: grid; gap: var(--sp-6); }
+.site-footer__brand { display: grid; gap: var(--sp-2); max-width: 26rem; }
+.site-footer__name { color: var(--color-ink); font-family: var(--font-display); font-size: var(--fs-md); font-weight: 700; }
+.site-footer__links { display: flex; flex-wrap: wrap; gap: 0 var(--sp-5); }
+.site-footer__links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-ink); }
+.site-footer__links a:hover { color: var(--color-primary); }
+.site-footer__links a:active { color: var(--color-primary-active); }
+
+@media (min-width: 1024px) {
+  .site-footer__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 5fr) auto; align-items: center; }
+}
+
+/* ==========================================================================
+   Sin animaciones para quien lo pidió
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .project:hover, .project:active { transform: none; }
+  .project:hover .project__media img { transform: none; }
+}
