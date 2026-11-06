@@ -495,3 +495,28 @@ html:not(.js) .main-nav { display: block; position: static; order: 3; width: 100
 @media (min-width: 1280px) {
   .project--featured .project__body { padding: var(--sp-10); }
 }
+
+/* ==========================================================================
+   Skills
+   ========================================================================== */
+.skills { display: grid; gap: var(--sp-4); }
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-6);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+.skill p { color: var(--color-ink-soft); }
+.skill .tags { margin-top: var(--sp-1); }
+
+@media (min-width: 768px) {
+  .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-6); }
+}
+@media (min-width: 1280px) {
+  .skills { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .skill { grid-column: span 2; }
+  .skill:nth-child(n + 4) { grid-column: span 3; }
+}
