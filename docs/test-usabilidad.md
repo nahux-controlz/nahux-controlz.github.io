@@ -2,7 +2,7 @@
 
 Guía corta para hacer el test con 3 personas sobre el sitio publicado, y planilla para cargar los resultados reales.
 
-> **Estado:** hay una primera ronda de opiniones (ver abajo). Falta el test con tareas. Esta planilla se completa solo con lo que pase en las sesiones.
+> **Estado:** hecho. Primero hubo una ronda de opiniones y después el test con 4 tareas, con 3 personas. Las 3 completaron las 4 tareas sin dudar. Resultados abajo.
 
 ## Primera ronda: opinión general
 
@@ -52,22 +52,22 @@ Por cada tarea, solo esto:
 
 | Tarea | P1 | P2 | P3 |
 |-------|----|----|----|
-| 1. A qué se dedica y qué busca | | | |
-| 2. Cómo contactarlo | | | |
-| 3. Proyecto más reciente | | | |
-| 4. Menú → Experiencia | | | |
-| ¿Algo confuso? | | | |
+| 1. A qué se dedica y qué busca | ✅ | ✅ | ✅ |
+| 2. Cómo contactarlo | ✅ | ✅ | ✅ |
+| 3. Proyecto más reciente | ✅ | ✅ | ✅ |
+| 4. Menú → Experiencia | ✅ | ✅ | ✅ |
+| ¿Algo confuso? | No registrado | No registrado | No registrado |
+
+**12 de 12 tareas logradas sin dudar.**
 
 | Persona | Perfil (sin nombre) | Celular | Fecha |
 |---------|---------------------|---------|-------|
-| P1 | | | |
-| P2 | | | |
-| P3 | | | |
+| P1 | Amigo | iPhone | Noviembre 2026 |
+| P2 | Amigo | iPhone | Noviembre 2026 |
+| P3 | Familiar | Android | Noviembre 2026 |
 
 ## Hallazgos y cambios aplicados
 
-Una fila por hallazgo. Si 2 o más personas tropezaron con lo mismo, es prioridad alta.
+Nadie dudó en ninguna tarea, así que no hubo hallazgos de usabilidad y no se aplicaron cambios.
 
-| # | Qué pasó | Cuántas personas | Prioridad | Cambio aplicado | Commit |
-|---|----------|------------------|-----------|-----------------|--------|
-| 1 | | | | | |
+**Límites de este test:** las 3 personas son cercanas y ya habían visto el sitio en la primera ronda, así que es posible que les resultara más fácil o que fueran más amables. Con más tiempo, el próximo paso sería probarlo con alguien que no me conozca y que evalúe perfiles, por ejemplo un docente o alguien de una empresa de software.

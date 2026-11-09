@@ -57,7 +57,12 @@ Un cauce ordena el agua sin frenarla. Las tres palabras de la marca personal son
 
 ## Validación
 
-**Estado: parcial.** Tres personas (dos amigos y un familiar) vieron el portfolio y coincidieron en que los colores y el diseño están bien logrados, prolijos y lindos a la vista. No señalaron problemas, así que no hubo cambios. Fue una opinión general: todavía falta el test con tareas, que mide si encuentran el contacto, entienden el perfil y navegan bien en el celular. La guía, las tareas y la planilla están en [docs/test-usabilidad.md](docs/test-usabilidad.md).
+**Estado: hecho**, con 3 personas: dos amigos y un familiar.
+
+1. **Opinión general.** Coincidieron en que los colores y el diseño están bien logrados, prolijos y lindos a la vista.
+2. **Test con 4 tareas** en el sitio publicado, cada persona en su celular (2 iPhone y 1 Android): entender a qué me dedico y qué busco, encontrar cómo contactarme, abrir el proyecto más reciente y usar el menú mobile. **Las 3 personas completaron las 4 tareas sin dudar (12 de 12).**
+
+No aparecieron problemas, así que no hubo cambios. Como las personas son cercanas, el resultado puede ser más favorable de lo normal; el próximo paso sería probarlo con alguien que evalúe perfiles. Guía, planilla y resultados en [docs/test-usabilidad.md](docs/test-usabilidad.md).
 
 ## Correr en local
 
