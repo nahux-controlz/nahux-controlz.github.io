@@ -56,7 +56,7 @@ Por cada tarea, solo esto:
 | 2. Cómo contactarlo | ✅ | ✅ | ✅ |
 | 3. Proyecto más reciente | ✅ | ✅ | ✅ |
 | 4. Menú → Experiencia | ✅ | ✅ | ✅ |
-| ¿Algo confuso? | No registrado | No registrado | No registrado |
+| ¿Algo confuso? | Nada | Nada | Nada |
 
 **12 de 12 tareas logradas sin dudar.**
 
@@ -68,6 +68,6 @@ Por cada tarea, solo esto:
 
 ## Hallazgos y cambios aplicados
 
-Nadie dudó en ninguna tarea, así que no hubo hallazgos de usabilidad y no se aplicaron cambios.
+Nadie dudó en ninguna tarea y, al preguntarles si algo los confundió o les costó encontrar, las 3 personas dijeron que nada. No hubo hallazgos de usabilidad, así que no se aplicaron cambios.
 
 **Límites de este test:** las 3 personas son cercanas y ya habían visto el sitio en la primera ronda, así que es posible que les resultara más fácil o que fueran más amables. Con más tiempo, el próximo paso sería probarlo con alguien que no me conozca y que evalúe perfiles, por ejemplo un docente o alguien de una empresa de software.
