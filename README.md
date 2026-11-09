@@ -101,7 +101,8 @@ El sitio se publica solo en cada push a `main`, con [.github/workflows/deploy.ym
 
 Se usó un asistente de IA.
 
-**Qué se generó con IA:** parte del código del sitio, los textos a partir de los trabajos reales del alumno.
+**Qué se generó con IA:** parte del código del sitio, los textos a partir de los trabajos reales del alumno. 
+Tambien ayudó con parte del figma.
 
 
 
