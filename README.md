@@ -106,4 +106,4 @@ Se usó un asistente de IA.
 - Accesibilidad, responsive y performance se midieron con las herramientas de la tabla anterior.
 - El alumno revisa textos y datos personales antes de la entrega.
 
-**Orden real del trabajo:** el prototipo de alta fidelidad se generó a partir de la maqueta, no antes. Por eso coincide con el sitio. El test se hace sobre ese prototipo y sus cambios se aplican en Figma y en el código.
+**Orden real del trabajo:** el prototipo de alta fidelidad se generó a partir de la maqueta, no antes. Por eso coincide con el sitio. El test se hace sobre el sitio publicado, que es igual al prototipo, y sus cambios se aplican en Figma y en el código.
