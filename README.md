@@ -28,7 +28,7 @@ Un cauce ordena el agua sin frenarla. Las tres palabras de la marca personal son
 
 ```
 ├── index.html             página principal (9 secciones)
-├── casos/                 casos de estudio: Cubrí Seguros y este portfolio
+├── casos/                 casos de estudio: Cubrí Seguros y Viandas
 ├── 404.html               página no encontrada
 ├── css/tokens.css         variables del design system, iguales a las de Figma
 ├── css/main.css           estilos mobile-first
