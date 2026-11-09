@@ -101,9 +101,9 @@ El sitio se publica solo en cada push a `main`, con [.github/workflows/deploy.ym
 
 Se usó un asistente de IA.
 
-**Qué se generó con IA:** el código del sitio, los textos a partir de los trabajos reales del alumno, el archivo de Figma (research, wireframes, design system y prototipo), el PDF de proceso, la guía del test, este README y las capturas compuestas.
+**Qué se generó con IA:** parte del código del sitio, los textos a partir de los trabajos reales del alumno.
 
-**Qué no generó la IA:** el test con personas, que debe hacer el alumno, y los proyectos que se muestran, que se resolvieron en la cursada.
+
 
 **Cómo se revisó:**
 
