@@ -94,7 +94,7 @@ El sitio se publica solo en cada push a `main`, con [.github/workflows/deploy.ym
 
 ## Uso de IA
 
-Se usó **Claude Code** (Anthropic), con el modelo Claude Opus 5.5.
+Se usó un asistente de IA.
 
 **Qué se generó con IA:** el código del sitio, los textos a partir de los trabajos reales del alumno, el archivo de Figma (research, wireframes, design system y prototipo), el PDF de proceso, la guía del test, este README y las capturas compuestas.
 
