@@ -2,7 +2,18 @@
 
 Guía para hacer el test con al menos 3 personas, sobre el prototipo de Figma, y planilla para cargar los resultados reales.
 
-> **Estado:** pendiente. Todavía no se hizo con personas. Esta planilla se completa solo con lo que pase en las sesiones.
+> **Estado:** hay una primera ronda de opiniones (ver abajo). Falta el test con tareas. Esta planilla se completa solo con lo que pase en las sesiones.
+
+## Primera ronda: opinión general
+
+Antes del test con tareas, le mostré el portfolio a 3 personas y les pedí su opinión. No hicieron tareas ni medí tiempos, así que esta ronda dice cómo se percibe el sitio, no si se usa sin problemas.
+
+**Quiénes:** dos amigos y un familiar (sin nombres).
+**Qué dijeron, en conjunto:** que los colores y el portfolio están muy bien logrados, y que se ve prolijo y lindo a la vista.
+
+**Qué confirma:** la identidad visual se percibe prolija y agradable, en línea con "claro" y "cercano" del concepto.
+**Qué no cubre:** si encuentran el contacto, si entienden qué hago y qué busco, y si navegan bien en el celular. Eso lo mide el test con tareas.
+**Cambios aplicados:** ninguno. Nadie señaló un problema.
 
 ## Preparación
 
@@ -25,7 +36,7 @@ Leé una por vez, sin mostrarle dónde está cada cosa. Si alguien se traba más
 |---|-------|-------------------------|
 | 1 | Mirá la pantalla 30 segundos. Después decime qué hace esta persona y qué está buscando. | Dice UX/UI o front-end, y pasantía o primer puesto. |
 | 2 | Encontrá el email de contacto. | Llega al email en la sección Contacto. |
-| 3 | Abrí el proyecto más reciente. | Abre el caso de Cubrí Seguros. |
+| 3 | Abrí el proyecto más reciente. | Abre el caso de Viandas. |
 | 4 | Decime con qué herramientas diseña. | Nombra Figma en Skills o en la ficha. |
 | 5 | Solo en celular: abrí el menú y andá a Experiencia. | Abre el menú y elige Experiencia. |
 | 6 | ¿Dónde estudia y en qué año va? | Dice FCyT UADER y 2.º año. |

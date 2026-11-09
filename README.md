@@ -57,7 +57,7 @@ Un cauce ordena el agua sin frenarla. Las tres palabras de la marca personal son
 
 ## Validación
 
-**Estado: pendiente.** El test con al menos 3 personas todavía no se hizo. La guía, las tareas y la planilla de resultados están en [docs/test-usabilidad.md](docs/test-usabilidad.md). Los hallazgos y los cambios aplicados se van a documentar ahí.
+**Estado: parcial.** Tres personas (dos amigos y un familiar) vieron el portfolio y coincidieron en que los colores y el diseño están bien logrados, prolijos y lindos a la vista. No señalaron problemas, así que no hubo cambios. Fue una opinión general: todavía falta el test con tareas, que mide si encuentran el contacto, entienden el perfil y navegan bien en el celular. La guía, las tareas y la planilla están en [docs/test-usabilidad.md](docs/test-usabilidad.md).
 
 ## Correr en local
 
